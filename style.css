@@ -1,0 +1,146 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #f5f6fa;
+  color: #222;
+}
+
+header {
+  background: #222;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.logo {
+  font-size: 1.6em;
+  font-weight: bold;
+  margin-left: 2em;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.5em;
+  list-style: none;
+  margin-right: 2em;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+nav a:hover {
+  background: #00b894;
+}
+
+#menu-btn {
+  display: none;
+  background: none;
+  color: #fff;
+  font-size: 2em;
+  border: none;
+  margin-right: 1em;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 60px 0 40px 0;
+  background: #00b894;
+  color: #fff;
+}
+
+.hero span {
+  color: yellow;
+}
+
+.profile-img {
+  width: 120px;
+  border-radius: 100%;
+  margin-bottom: 15px;
+}
+
+.cta {
+  background: #222;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 6px;
+  margin-top: 20px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.cta:hover {
+  background: #333;
+}
+
+/* Sections */
+section {
+  max-width: 900px;
+  margin: 38px auto;
+  background: #fff;
+  padding: 32px;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+}
+
+.skills {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 18px 0;
+  padding: 0;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.project-card {
+  background: #eee;
+  border-radius: 8px;
+  padding: 18px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.04);
+}
+
+
+
+
+.social a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #00b894;
+}
+
+footer {
+  text-align: center;
+  background: #222;
+  color: #f7f7f7;
+  padding: 18px;
+  border-radius: 0 0 10px 10px;
+  margin-top: 30px;
+}
+
+@media (max-width: 700px) {
+  nav ul { display: none; }
+  #menu-btn { display: block; }
+  .card-container, .skills { flex-direction: column; }
+}
